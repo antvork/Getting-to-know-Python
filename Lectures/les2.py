@@ -154,5 +154,8 @@
 # print(list_2)
 # list_2 = [(i, i) for i in range(1, 101) if i % 2 == 0] #Создание кортежей 
 # print(list_2)
-list_3 = [i*2 for i in range(10) if i % 2 == 0]
-print(list_3)
+# list_3 = [i*2 for i in range(10) if i % 2 == 0]
+# print(list_3)
+
+list_4 = [0]*7
+print(len(list_4))
