@@ -26,7 +26,7 @@
 #     "VII": " S005 "}, {" V ": " S009 "}, {" VIII": " S007 "}]
 # result = []
 # for item in myList:
-#     result.append(list(item.values())[0])
+#     result.append(list(item.values())[0])# из item словаря {'V': 'S001'} берется values (значение) и заноситься в список
 # print(set(result))
 
 # Задача №23. Решение в группах
@@ -35,13 +35,13 @@
 # Input: [0, -1, 5, 2, 3]
 # Output: 2 (-1 < 5, 2 < 3)
 # Примечание: Пользователь может вводить значения списка или список задан изначально.
-myList = [0, -1, 5, 2, 3]
+# myList = [0, -1, 5, 2, 3]
 # result = 0
 # for i in range(1, len(myList)):
 #     if myList[i] > myList[i-1]:
 #         result += 1
 # print(result)
 
-list_1 = [myList[i] for i in range(1, len(myList))if myList[i] > myList[i-1]]
-print(len(list_1))
-print(list_1)
+# list_1 = [myList[i] for i in range(1, len(myList))if myList[i] > myList[i-1]]
+# print(len(list_1))
+# print(list_1)

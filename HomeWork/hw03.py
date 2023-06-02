@@ -60,7 +60,7 @@ dict_1 = {"A": 1, "E": 1, "I": 1, "O": 1, "U": 1, "L": 1, "N": 1, "S": 1, "T": 1
                   "Ч": 5, "Ш": 8, "Э": 8, "Ю": 8, "Ф": 10, "Щ": 10, "Ъ": 10}
 
 
-x = dict_1["A"] + dict_1["A"]
+# x = dict_1["A"] + dict_1["A"]
 word = input("Enter to word: ").upper()
 print(word.lower())
 result = 0
