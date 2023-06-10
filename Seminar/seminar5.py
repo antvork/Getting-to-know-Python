@@ -35,16 +35,16 @@ import customFunct as cf
 # Input: 5
 # Output: yes
 
-# number = int(input('Введите число: '))
-# def is_simple(number):
-#     if number > 2 and number %2 !=0:
-#         for i in range( 3, number //2):
-#             if number % i == 0:
-#                 return False
-#         return True
-#     return False
+number = int(input('Введите число: '))
+def is_simple(number):
+    if number > 2 and number %2 !=0:
+        for i in range( 3, number //2):
+            if number % i == 0:
+                return False
+        return True
+    return False
 
-# print(is_simple(number))
+print(is_simple(number))
 
 # def is_prime(number): #ИИ
 #     if number < 2:
@@ -59,11 +59,13 @@ import customFunct as cf
 # print(is_prime(7))  # True
 # print(is_prime(10))  # False
 
-def reverse_range(num):
-    print(num, end=' ')
-    if num > 1:
-        reverse_range(num -1)
+
+#Вывод в обратном порядке Рекурсия
+# def reverse_range(num):
+#     print(num, end=' ')
+#     if num > 1:
+#         reverse_range(num -1)
     
-number = int(input('Введите число: '))
+# number = int(input('Введите число: '))
              
-reverse_range(number)
+# reverse_range(number)

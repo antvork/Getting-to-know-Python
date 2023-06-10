@@ -148,14 +148,14 @@
 # print(b)
 
 ### List Comprehension - Генератор списка
-# list_1 = [i for i in range(1, 101)] #Создание списка от 1 до 100
-# print(list_1)
-# list_2 = [i for i in range(1, 101) if i % 2 == 0]  #Создание списка от 1 до 100 только четные числа
-# print(list_2)
-# list_2 = [(i, i) for i in range(1, 101) if i % 2 == 0] #Создание кортежей 
-# print(list_2)
-# list_3 = [i*2 for i in range(10) if i % 2 == 0]
-# print(list_3)
+list_1 = [i for i in range(1, 101)] #Создание списка от 1 до 100
+print(list_1)
+list_2 = [i for i in range(1, 101) if i % 2 == 0]  #Создание списка от 1 до 100 только четные числа
+print(list_2)
+list_2 = [(i, i) for i in range(1, 101) if i % 2 == 0] #Создание кортежей 
+print(list_2)
+list_3 = [i*2 for i in range(10) if i % 2 == 0]
+print(list_3)
 
 list_4 = [0]*7
 print(len(list_4))
