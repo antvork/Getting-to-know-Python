@@ -67,7 +67,7 @@ orbits = [(1, 3), (2.5, 10), (7, 2), (6, 6), (4, 3)]
 
 def same_by(characteristic, objects):
     for item in objects:
-        if not characteristic(item):
+        if not characteristic(item): #Если лямбды не пришло True то False
             return False
     return True
     

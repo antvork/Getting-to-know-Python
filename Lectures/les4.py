@@ -34,30 +34,30 @@
 
 # print(resList)
 
-# def select(f, col):   ### Пересмотреть и разобрать!!!
-#     return [f(x) for x in col] # в переменную f мы ложим фкнкцию и для всех элементов x из col мы применяем функцию
+def select(f, col):   ### Пересмотреть и разобрать!!!
+    return [f(x) for x in col] # в переменную f мы ложим фкнкцию и для всех элементов x из col мы применяем функцию
 
 
-# def where(f, col):
-#     return [x for x in col if f(x)] # функция возвращает список если они прошли провеку f(x) функции
+def where(f, col):
+    return [x for x in col if f(x)] # функция возвращает список если они прошли провеку f(x) функции
 
 
-# data = [1, 2, 3, 5, 8, 15, 23, 38]
-# res = select(int, data)  # переводим все к целочисленному типу
-# print(res)
+data = [1, 2, 3, 5, 8, 15, 23, 38]
+res = select(int, data)  # переводим все к целочисленному типу
+print(res)
 
-# res = where(lambda x: x % 2 == 0, res) # возвращяем список только с четными значениями
-# print(res)
+res = where(lambda x: x % 2 == 0, res) # возвращяем список только с четными значениями
+print(res)
 
-# res = list(select(lambda x: (x, x**2), res)) # возвращаем список кортежей x и x**2
-# # res = select(lambda x: (x, x**2), res) # возвращаем список кортежей x и x**2
-# print(res)
+res = list(select(lambda x: (x, x**2), res)) # возвращаем список кортежей x и x**2
+# res = select(lambda x: (x, x**2), res) # возвращаем список кортежей x и x**2
+print(res)
 
 # Функция MAP
 
 ###
-# map  =  # def select(f, col):   ### Пересмотреть и разобрать!!!
-# return [f(x) for x in col]
+# map  =  # def select(f, col):   в переменную f мы ложим фкнкцию и для всех элементов x из col мы применяем функцию
+# return [f(x) for x in col] # выполныем функцию для x из списка col
 ###
 
 # list_1 = [x for x in range(1, 20)]
@@ -80,6 +80,7 @@
 
 # def where(f, col):# функция возвращает список если они прошли провеку f(x) функции
 #     return [x for x in col if f(x)]
+#             
 
 
 # data = [1, 2, 3, 5, 8, 15, 23, 38]

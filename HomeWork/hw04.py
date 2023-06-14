@@ -26,21 +26,24 @@ from random import randint
 # print(f"Отсортированные числа: {resSet}")
 
 # Ввод чисел через пробел в список пока не нажмет Enter
-mol = [int(x) for x in input().split()]
-n = mol[0]  # Берется 1 число списка
-m = mol[1]  # 2 число списка
+# mol = [int(x) for x in input().split()]
+# n = mol[0]  # Берется 1 число списка
+# m = mol[1]  # 2 число списка
 set_1 = set()
 set_2 = set()
-list_1 = list()
+list_1 = list() # Лишнее
 a = [int(x) for x in input().split()]  # Создается список под множество
 k = set(a)  # список переводиться в множество
-for i in k:
-    set_1.add(i)
+print(k)
+# for i in k:
+#     set_1.add(i) ## безсмысленное действие
 b = [int(x) for x in input().split()]
 k1 = set(b)
-for i in k1:
-    set_2.add(i)
-lok = set_1 & set_2
+print(k1)
+# for i in k1:
+#     set_2.add(i) ###
+# lok = set_1 & set_2
+lok = k & k1 # объединение множеств
 kool = list(lok)
 kool.sort()
 for i in kool:
@@ -56,15 +59,27 @@ for i in kool:
 # Напишите программу для нахождения максимального числа ягод, которое может собрать за один заход собирающий модуль,
 # находясь перед некоторым кустом заданной во входном файле грядки.
 
-# # gryadka = [4, 5, 3, 5, 7, 1, 2, 6, 7]
-# n = int(input('Введтите размер грядки: '))
-# gryadka = [randint(1, 10) for i in range(n)]
+gryadka = [4, 5, 3, 5, 7, 1, 2, 6, 7]
+n = int(input('Введтите размер грядки: '))
+gryadka = [randint(1, 10) for i in range(n)]
 
-# shema = {}
-# for i in range(len(gryadka)-1):
-#     shema[i] = gryadka[i-1]+gryadka[i]+gryadka[i+1]
-# shema[len(gryadka)-1] = gryadka[len(gryadka)-2] + gryadka[len(gryadka)-1] + gryadka[-len(gryadka)]
-# print(shema)
-# # # # shema = dict(sorted(shema.items(), key=lambda x: x[1], reverse=True))
+shema = {}
+for i in range(len(gryadka)-1):
+    shema[i] = gryadka[i-1]+gryadka[i]+gryadka[i+1]
+shema[len(gryadka)-1] = gryadka[len(gryadka)-2] + gryadka[len(gryadka)-1] + gryadka[-len(gryadka)]
+print(shema)
+# # # shema = dict(sorted(shema.items(), key=lambda x: x[1], reverse=True))
 
-# print(f"Модуль соберет маскимальное количество ягоды с грядки № {max(shema, key=shema.get)} в количестве: {shema[max(shema, key=shema.get)]}")
+print(f"Модуль соберет маскимальное количество ягоды с грядки № {max(shema, key=shema.get)} в количестве: {shema[max(shema, key=shema.get)]}")
+
+n = int(input())
+arr = list()
+for i in range(n):
+    x = int(input())
+    arr.append(x)
+
+arr_count = list()
+for i in range(len(arr)-1):
+    arr_count.append(arr[i -1] + arr[i] + arr[i+1])
+arr_count.append(arr[-2]+ arr[-1]+arr[0])
+print(max(arr_count))
