@@ -60,5 +60,6 @@ def print_operation_table(operation, num_rows, num_columns):
             string_1 += f"{operation(i, j):4d}"
         print(string_1)
         string_1 = ""
+    return ''
 
 print(print_operation_table(lambda x,y: x*y, 6, 6))
